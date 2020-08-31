@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container">
+        <div class ="nav-wrapper"> <!-- navigation bar--> 
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About Me</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>Pedro Ribeiro</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/python.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/python.png" alt="">
+                        </div>
+                        <div class="subtitle" alt="">
+                            My journey with python begun in my first year at college. My most recent projects were: machine learning, sudoku solver and A* algorithm implementation and visualization.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/R.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/R.jpg" alt="">
+                        </div>
+                        <div class="subtitle">
+                            R was the first software, in which I could see implemented all the statistical models I know of, for example:
+                            linear regression, logistic regression and many more.    
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/Mysql.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/MySQL.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            I know how to write SQL queries, nested queries and stored procedures. The best part is that I learned by myself.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/java.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/java.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            After learning the basics of java, my first and only project to date was to build a card dealer application. 
+                        </div>
+
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/C_sharp.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/C_sharp.png" alt="">
+                        </div>
+                        <div class="subtitle">
+                            C# was another language I decided to learn due to it's popularity. My first and only project was to build a contact book application that interacts with a Mysql database. 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            /*console.log(portfolioItem.childNodes[1].classList);*/
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+    })
+		
+</script>
+</html>
