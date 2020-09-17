@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, 
+        initial-scale=1.0">
+        <title>Recipes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="mobile-container">
+            <header>
+                <input type="text" id="search-word">
+                <button id="search"><i class="fas fa-search"></i></button> 
+            </header>
+            <div class="favorite-container">
+                <h3>Favorite Recipes</h3>
+                <ul class="favorite-recipes" id="fav-recipes">
+                </ul>
+            </div>
+            <div class="recipes" id="recipes"></div>
+        </div>
+        <div class="popup-container hidden" id="recipe-popup">
+            <div class="popup">
+                <button class="close-popup" id="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="recipe-info" id="recipe-info"></div>
+            </div>
+        </div>  
+    </body>
+</html>
